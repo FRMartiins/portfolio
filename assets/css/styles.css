@@ -34,7 +34,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .container {
@@ -60,6 +60,12 @@ a:hover {
 .brand {
     font-weight: 700;
     letter-spacing: 0.2px;
+}
+
+.nav-scrolled{
+   background: rgba(11, 15, 25, 0.24);
+  backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 .nav__links {
@@ -197,6 +203,38 @@ a:hover {
     background: rgba(255, 255, 255, 0.02);
 }
 
+.links{
+     width: fit-content;
+  border: 1px solid #2a3a55;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+.links:hover{
+    border-color: #7c3aed;
+    background-color: #7C3AED;
+    
+}
+
+.footlinks {
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: nowrap; 
+  gap: 12px;             
+  align-items: center;
+ 
+}
+.btn-contact{
+    display: inline-flex;  
+  width: auto;          
+  padding: 10px 18px;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 999px;
+  text-decoration: none;
+}
+.btn-contact:hover{
+    border-color: #7c3aed;
+    background-color: #7C3AED;
+}
 .footer {
     padding: 28px 0 40px;
     border-top: 1px solid var(--border);
