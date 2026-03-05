@@ -204,15 +204,74 @@ a:hover {
 }
 
 .links{
-     width: fit-content;
-  border: 1px solid #2a3a55;
-  padding: 10px 18px;
-  border-radius: 20px;
+      display:flex;
+  gap:12px;
+  margin-top:14px;
+  flex-wrap:wrap;
+  align-items:center;
 }
 .links:hover{
     border-color: #7c3aed;
-    background-color: #7C3AED;
     
+    
+}
+
+.demo{
+  width: min(560px, 92vw);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(18,26,43,0.95);
+  color: var(--text);
+  padding: 16px;
+}
+
+.demo::backdrop{
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+}
+
+.demo__header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom: 12px;
+}
+
+.demo__close{
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+/* phone frame */
+.phone{
+  width: 280px;
+  margin: 12px auto 6px;
+  padding: 10px;
+  border-radius: 36px;
+  background: #070a10;
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.65);
+}
+
+/* vertical video */
+.video-embed{
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 26px;
+  overflow:hidden;
+  background:#000;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.video-embed iframe{
+  width:100%;
+  height:100%;
+  border:0;
 }
 
 .footlinks {
